@@ -103,12 +103,14 @@
             padding: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
             border-radius: 8px; /* 圆角边框 */
-            max-width: 300px; /* 确保广告不会超出视口 */
+            width: 300px; /* 设置固定宽度 */
+            max-width: 100%; /* 确保广告不会超出视口 */
+            box-sizing: border-box; /* 包括内边距和边框 */
         }
 
         .advertisement img {
-            max-width: 100%;
-            height: auto;
+            width: 100%; /* 确保图片填满广告区域 */
+            height: auto; /* 自动调整高度以保持比例 */
             display: block;
         }
     </style>
