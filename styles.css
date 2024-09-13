@@ -82,21 +82,20 @@ h2 {
     color: #333;
 }
 
-/* 固定广告样式 */
-.fixed-advertisement {
-    position: fixed;
+/* 广告样式 */
+.advertisement {
+    position: absolute; /* 使用绝对定位 */
     top: 20px; /* 距离页面顶部20px */
     right: 20px; /* 距离页面右边20px */
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
-    z-index: 1000; /* 确保广告在其他内容之上 */
-    max-width: 300px; /* 确保广告不会超出视口 */
     border-radius: 8px; /* 圆角边框 */
+    max-width: 300px; /* 确保广告不会超出视口 */
 }
 
-.fixed-advertisement img {
+.advertisement img {
     max-width: 100%;
     height: auto;
     display: block;
