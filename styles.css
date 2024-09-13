@@ -8,4 +8,22 @@ body {
 h1 {
     color: #333;
 }
+.testimonial {
+    background-color: #f9f9f9;
+    border-left: 4px solid #4CAF50;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.testimonial blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
+.testimonial footer {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
 
