@@ -60,3 +60,108 @@ label {
 input, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
+/* 固定广告样式 */
+.fixed-advertisement {
+    position: fixed;
+    top: 20px; /* 距离页面顶部的距离 */
+    right: 20px; /* 距离页面右边的距离 */
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    z-index: 1000; /* 确保广告在其他内容之上 */
+    max-width: 300px; /* 确保广告不会超出视口 */
+}
+
+.fixed-advertisement img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 其他样式 */
+.testimonial {
+    margin: 20px 0;
+}
+
+.toggle-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #45a049;
+}
+
+.testimonial-content {
+    display: none; /* Initially hide the testimonial content */
+    margin: 0;
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
+.testimonial-content footer {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 表单容器样式 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 增加间距 */
+}
+
+/* 表单字段的样式 */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px; /* 标签和输入框之间的间距 */
+    font-weight: bold;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* 包括内边距和边框 */
+}
+
+textarea {
+    resize: vertical; /* 允许用户垂直调整大小 */
+}
+
+/* 提交按钮样式 */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
