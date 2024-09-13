@@ -226,3 +226,15 @@ nav a:hover {
     height: 100px;
     background: #ccc;
 }
+.advertisement {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+}
