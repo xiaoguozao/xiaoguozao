@@ -306,3 +306,45 @@ button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
     z-index: 1000; /* 确保广告在其他内容之上 */
     max-width: 300px; /* 确保广告不会超出视口 */
+/* Existing styles... */
+
+/* Customer testimonials */
+.testimonial {
+    margin: 20px 0;
+}
+
+.toggle-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #45a049;
+}
+
+.testimonial-content {
+    display: none; /* Initially hide the testimonial content */
+    margin: 0;
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
+.testimonial-content footer {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
