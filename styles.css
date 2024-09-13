@@ -1,95 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-h1 {
-    color: #333;
-}
+/* 客户评价的样式 */
 .testimonial {
-    background-color: #f9f9f9;
-    border-left: 4px solid #4CAF50;
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 5px;
+    background-color: #f9f9f9; /* 背景色 */
+    border-left: 4px solid #4CAF50; /* 左侧边框颜色 */
+    margin: 20px 0; /* 上下边距 */
+    padding: 15px; /* 内边距 */
+    border-radius: 5px; /* 圆角边框 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微的阴影效果 */
 }
 
 .testimonial blockquote {
-    margin: 0;
-    font-style: italic;
+    margin: 0; /* 去掉默认的块引用边距 */
+    font-style: italic; /* 斜体 */
 }
 
 .testimonial footer {
-    text-align: right;
-    font-weight: bold;
-    color: #333;
+    text-align: right; /* 右对齐 */
+    font-weight: bold; /* 粗体 */
+    color: #333; /* 字体颜色 */
 }
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* 增加圆角 */
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-/* 添加过渡效果 */
-a, button {
-    transition: background-color 0.3s, color 0.3s;
-}
-@media (max-width: 768px) {
-    img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .container {
-        width: 95%;
-    }
-}
-
