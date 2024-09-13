@@ -64,19 +64,80 @@ button:hover {
     background-color: #45a049;
 }
 
-/* 广告样式 */
-.advertisement {
-    position: absolute; /* 或者使用 relative，如果你希望广告相对于父元素定位 */
-    top: 20px; /* 距离页面顶部20像素 */
-    right: 20px; /* 距离页面右边20像素 */
+/* 联系我们部分的样式 */
+section {
+    padding: 20px; /* 添加内边距 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    border-radius: 8px; /* 圆角边框 */
+    margin: 20px 0; /* 上下边距 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 增加字段之间的间距 */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px; /* 标签和输入框之间的间距 */
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* 包括内边距和边框 */
+}
+
+textarea {
+    resize: vertical; /* 允许用户垂直调整大小 */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* 平滑的背景颜色过渡效果 */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* 固定广告样式 */
+.fixed-advertisement {
+    position: fixed;
+    top: 20px; /* 或者使用更大的值来调整距离页面顶部的距离 */
+    right: 20px; /* 或者使用更大的值来调整距离页面右边的距离 */
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    z-index: 1000; /* 确保广告在其他内容之上 */
     max-width: 300px; /* 确保广告不会超出视口 */
 }
 
-.advertisement img {
+.fixed-advertisement img {
     max-width: 100%;
     height: auto;
     display: block;
