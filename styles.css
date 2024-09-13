@@ -63,3 +63,28 @@ button {
 button:hover {
     background-color: #45a049;
 }
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .video, .audio {
+        width: 100%;
+    }
+}
+button:active {
+    background-color: #388e3c;
+}
+.form-group input,
+.form-group textarea {
+    margin-bottom: 10px;
+}
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
