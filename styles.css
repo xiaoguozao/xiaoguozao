@@ -22,69 +22,11 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* 增加间距 */
+    gap: 20px; /* 增加字段之间的间距 */
+    padding: 20px; /* 添加内边距 */
 }
 
 /* 表单字段的样式 */
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px; /* 标签和输入框之间的间距 */
-    font-weight: bold;
-}
-
-input, textarea {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box; /* 包括内边距和边框 */
-}
-
-textarea {
-    resize: vertical; /* 允许用户垂直调整大小 */
-}
-
-/* 提交按钮样式 */
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* 联系我们部分的样式 */
-section {
-    padding: 20px; /* 添加内边距 */
-    background-color: #f9f9f9; /* 背景颜色 */
-    border-radius: 8px; /* 圆角边框 */
-    margin: 20px 0; /* 上下边距 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* 增加字段之间的间距 */
-}
-
 .form-group {
     display: flex;
     flex-direction: column;
@@ -109,6 +51,7 @@ textarea {
     resize: vertical; /* 允许用户垂直调整大小 */
 }
 
+/* 提交按钮样式 */
 button {
     background-color: #4CAF50;
     color: white;
@@ -122,6 +65,21 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+/* 联系我们部分的样式 */
+section {
+    padding: 20px; /* 添加内边距 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    border-radius: 8px; /* 圆角边框 */
+    margin: 20px 0; /* 上下边距 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 /* 固定广告样式 */
