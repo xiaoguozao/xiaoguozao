@@ -8,6 +8,110 @@
     <title>小果皂股份有限公司</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <style>
+        /* 客户评价的样式 */
+        .testimonial {
+            border-left: 4px solid #4CAF50; /* 左侧边框颜色 */
+            margin: 20px 0; /* 上下边距 */
+            padding: 15px; /* 内边距 */
+            border-radius: 5px; /* 圆角边框 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微的阴影效果 */
+        }
+
+        .testimonial blockquote {
+            margin: 0; /* 去掉默认的块引用边距 */
+            font-style: italic; /* 斜体 */
+        }
+
+        .testimonial footer {
+            text-align: right; /* 右对齐 */
+            font-weight: bold; /* 粗体 */
+            color: #333; /* 字体颜色 */
+        }
+
+        /* 表单容器样式 */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* 增加字段之间的间距 */
+            padding: 20px; /* 添加内边距 */
+        }
+
+        /* 表单字段的样式 */
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px; /* 标签和输入框之间的间距 */
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, textarea {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 12px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box; /* 包括内边距和边框 */
+        }
+
+        textarea {
+            resize: vertical; /* 允许用户垂直调整大小 */
+        }
+
+        /* 提交按钮样式 */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease; /* 平滑的背景颜色过渡效果 */
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* 联系我们部分的样式 */
+        section {
+            padding: 20px; /* 添加内边距 */
+            background-color: #f9f9f9; /* 背景颜色 */
+            border-radius: 8px; /* 圆角边框 */
+            margin: 20px 0; /* 上下边距 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* 广告样式 */
+        .advertisement {
+            position: absolute; /* 使用绝对定位 */
+            top: 20px; /* 距离页面顶部20px */
+            right: 20px; /* 距离页面右边20px */
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+            border-radius: 8px; /* 圆角边框 */
+            max-width: 300px; /* 确保广告不会超出视口 */
+        }
+
+        .advertisement img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -113,10 +217,11 @@
         </section>
     </main>
     
-   <aside class="fixed-advertisement">
-    <p>广告。</p>
-    <img src="广告图片路径" alt="广告">
-</aside>
+    <!-- 广告部分 -->
+    <aside class="advertisement">
+        <p>广告。</p>
+        <img src="广告图片路径" alt="广告">
+    </aside>
     
     <footer>
         <p>&copy; 2024 小果皂股份有限公司</p>
